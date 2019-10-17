@@ -19,7 +19,15 @@ class _ConnectionPageState extends State<ConnectionPage> {
           child: Column(
             children: <Widget>[
               SizedBox(height: 100.0,),
-              Text('YOUR CONNECTIONS', textAlign: TextAlign.start, style: TextStyle(fontSize: 17),),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(width: 15.0,),
+                    Text('YOUR CONNECTIONS', style: TextStyle(fontSize: 17),),
+                  ],
+                ),
+              ),
               SizedBox(height: 20.0,),
               Card(
                 shape: RoundedRectangleBorder(
@@ -32,8 +40,10 @@ class _ConnectionPageState extends State<ConnectionPage> {
                   child: Container(
                     padding: EdgeInsets.all(10.0),
                     child: Column(
+                      // mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -41,6 +51,9 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                 Text('Enjoying life and living with love.'),
                                 SizedBox(height: 15.0,),
                                 FlatButton(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5.0),
+                                  ),
                                   onPressed: () => null,
                                   color: Colors.cyan,
                                   textColor: Colors.white,
@@ -59,6 +72,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                         ),
                         SizedBox(height: 15.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -66,6 +80,9 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                 Text('Enjoying life and living with love.'),
                                 SizedBox(height: 15.0,),
                                 FlatButton(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5.0),
+                                  ),
                                   onPressed: () => null,
                                   color: Colors.cyan,
                                   textColor: Colors.white,
@@ -84,6 +101,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                         ),
                         SizedBox(height: 15.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -91,6 +109,9 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                 Text('Enjoying life and living with love.'),
                                 SizedBox(height: 15.0,),
                                 FlatButton(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5.0),
+                                  ),
                                   onPressed: () => null,
                                   color: Colors.cyan,
                                   textColor: Colors.white,
@@ -109,6 +130,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                         ),
                         SizedBox(height: 15.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -116,6 +138,9 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                 Text('Enjoying life and living with love.'),
                                 SizedBox(height: 15.0,),
                                 FlatButton(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5.0),
+                                  ),
                                   onPressed: () => null,
                                   color: Colors.cyan,
                                   textColor: Colors.white,

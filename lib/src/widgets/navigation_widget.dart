@@ -41,7 +41,7 @@ class _NavigationWidgetState extends State<NavigationWidget> {
     setState(() {
       if(MyApp.page != index){
         MyApp.page = index; 
-        if(index == 0) Navigator.pushReplacementNamed(context, '/');
+        if(index == 0) Navigator.pushReplacementNamed(context, 'landing');
         if(index == 1) Navigator.pushReplacementNamed(context, 'connection');
         if(index == 2) Navigator.pushReplacementNamed(context, 'chat');
         if(index == 3) Navigator.pushReplacementNamed(context, 'profile');

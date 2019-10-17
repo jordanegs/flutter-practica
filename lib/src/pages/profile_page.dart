@@ -103,6 +103,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               SizedBox(height: 5.0,),
               TextField(
+                keyboardType: TextInputType.emailAddress,
                 controller: email,
               ),
               SizedBox(height: 30.0,),
@@ -112,6 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               SizedBox(height: 5.0,),
               TextField(
+                keyboardType: TextInputType.phone,
                 controller: phone,
               ),
               SizedBox(height: 30.0,),
@@ -121,6 +123,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               SizedBox(height: 5.0,),
               TextField(
+                keyboardType: TextInputType.datetime,
                 controller: date,
               ),
               SizedBox(height: 20.0,),

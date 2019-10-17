@@ -15,7 +15,7 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: double.maxFinite,
+        width: double.infinity,
         color: Colors.white,
         child: Swiper(
           itemBuilder: (BuildContext context,int index){
@@ -54,7 +54,7 @@ class _LandingPageState extends State<LandingPage> {
                                   ],
                                 ), 
                                 onPressed: () => {}, 
-                                splashColor: Colors.redAccent,
+                                splashColor: Colors.white,
                               ),
                               MaterialButton(
                                 height: 40.0, 
@@ -68,7 +68,7 @@ class _LandingPageState extends State<LandingPage> {
                                   ],
                                 ), 
                                 onPressed: () => {}, 
-                                splashColor: Colors.redAccent,
+                                splashColor: Colors.white,
                               ),
                             ],
                           ),

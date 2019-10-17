@@ -19,7 +19,15 @@ class _ChatPageState extends State<ChatPage> {
           child: Column(
             children: <Widget>[
               SizedBox(height: 100.0,),
-              Text('YOUR CHATS', textAlign: TextAlign.start, style: TextStyle(fontSize: 17),),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(width: 15.0,),
+                    Text('YOUR CHATS', style: TextStyle(fontSize: 17),),
+                  ],
+                ),
+              ),
               SizedBox(height: 20.0,),
               Card(
                 shape: RoundedRectangleBorder(
@@ -34,6 +42,7 @@ class _ChatPageState extends State<ChatPage> {
                     child: Column(
                       children: <Widget>[
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -54,6 +63,7 @@ class _ChatPageState extends State<ChatPage> {
                         ),
                         SizedBox(height: 35.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -74,6 +84,7 @@ class _ChatPageState extends State<ChatPage> {
                         ),
                         SizedBox(height: 35.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -94,6 +105,7 @@ class _ChatPageState extends State<ChatPage> {
                         ),
                         SizedBox(height: 35.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -114,6 +126,7 @@ class _ChatPageState extends State<ChatPage> {
                         ),
                         SizedBox(height: 35.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
@@ -134,6 +147,7 @@ class _ChatPageState extends State<ChatPage> {
                         ),
                         SizedBox(height: 35.0,),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Column(
                               children: <Widget>[
