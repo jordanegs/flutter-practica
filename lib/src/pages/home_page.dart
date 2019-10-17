@@ -14,8 +14,9 @@ class _HomPageState extends State<HomPage> {
         color: Colors.white,
         // minWidth: double.infinity, 
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+            SizedBox(height: 350.0,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -35,6 +36,10 @@ class _HomPageState extends State<HomPage> {
                 SizedBox(width: 100.0,),
                 Text('find your soul mate with us!', style: TextStyle(fontSize: 16),),
               ],
+            ),
+            SizedBox(height: 200.0,),
+            Center(
+              child: Text('10 mins away'),
             ),
           ],
         ),

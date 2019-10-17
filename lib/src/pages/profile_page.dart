@@ -143,7 +143,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     textColor: Colors.white, 
                     child: Text("Log out",),
                     onPressed: () => {}, 
-                    splashColor: Colors.redAccent,
+                    splashColor: Colors.white,
                   ),
                 ],
               ),

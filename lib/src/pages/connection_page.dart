@@ -69,6 +69,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                           Text('Remove')
                                         ],
                                       ),
+                                      splashColor: Colors.white,
                                     ),
                                   ],
                                 ),
@@ -98,6 +99,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                           Text('Remove')
                                         ],
                                       ),
+                                      splashColor: Colors.white,
                                     ),
                                   ],
                                 ),
@@ -127,6 +129,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                           Text('Remove')
                                         ],
                                       ),
+                                      splashColor: Colors.white,
                                     ),
                                   ],
                                 ),
@@ -156,6 +159,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                                           Text('Remove')
                                         ],
                                       ),
+                                      splashColor: Colors.white,
                                     ),
                                   ],
                                 ),
