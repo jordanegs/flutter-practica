@@ -23,119 +23,121 @@ class _ProfilePageState extends State<ProfilePage> {
     date.text = "31st February, 1998";
 
     return Scaffold(
-      body: Container(
-        color: Colors.white,
-        padding: EdgeInsets.all(15.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            Center(
-              child: Column(
-                children: <Widget>[
-                  SizedBox(height: 100.0,),
-                  Image.asset('images/profile.png'),
-                  SizedBox(height: 10.0,),
-                  Text('JANE DOE'),
-                ],
+      body: SingleChildScrollView(
+        child: Container(
+          color: Colors.white,
+          padding: EdgeInsets.all(15.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Center(
+                child: Column(
+                  children: <Widget>[
+                    SizedBox(height: 100.0,),
+                    Image.asset('images/profile.png'),
+                    SizedBox(height: 10.0,),
+                    Text('JANE DOE'),
+                  ],
+                ),
               ),
-            ),
-            SizedBox(height: 20.0,),
-            Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              elevation: 10,
-              child: InkWell(
-                splashColor: Colors.blue.withAlpha(30),
-                child: Container(
-                  padding: EdgeInsets.all(10.0),
-                  child: Column(
-                    children: <Widget>[
-                      SizedBox(height: 10.0,),
-                      Row(
-                        children: <Widget>[
-                          SizedBox(width: 45.0,),
-                          Column(
-                            children: <Widget>[
-                              Row(
-                                children: <Widget>[
-                                  Icon(Icons.favorite_border),
-                                  Text('30'),
-                                ],
-                              ),
-                              Text('Connections'),
-                            ],
-                          ),
-                          SizedBox(width: 120.0,),
-                          Column(
-                            children: <Widget>[
-                              Row(
-                                children: <Widget>[
-                                  Icon(Icons.chat_bubble_outline),
-                                  Text('10'),
-                                ],
-                              ),
-                              Text('Connections'),
-                            ],
-                          )
-                        ],
-                      ),
-                      SizedBox(height: 10.0,),
-                    ],
+              SizedBox(height: 20.0,),
+              Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                elevation: 10,
+                child: InkWell(
+                  splashColor: Colors.blue.withAlpha(30),
+                  child: Container(
+                    padding: EdgeInsets.all(10.0),
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(height: 10.0,),
+                        Row(
+                          children: <Widget>[
+                            SizedBox(width: 45.0,),
+                            Column(
+                              children: <Widget>[
+                                Row(
+                                  children: <Widget>[
+                                    Icon(Icons.favorite_border),
+                                    Text('30'),
+                                  ],
+                                ),
+                                Text('Connections'),
+                              ],
+                            ),
+                            SizedBox(width: 120.0,),
+                            Column(
+                              children: <Widget>[
+                                Row(
+                                  children: <Widget>[
+                                    Icon(Icons.chat_bubble_outline),
+                                    Text('10'),
+                                  ],
+                                ),
+                                Text('Connections'),
+                              ],
+                            )
+                          ],
+                        ),
+                        SizedBox(height: 10.0,),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(height: 20.0,),
-            Align(
-              alignment: Alignment.bottomLeft,
-              child: Text('Status'),
-            ),
-            SizedBox(height: 5.0,),
-            TextField(
-              controller: status,
-            ),
-            SizedBox(height: 30.0,),
-            Align(
-              alignment: Alignment.bottomLeft,
-              child: Text('Email'),
-            ),
-            SizedBox(height: 5.0,),
-            TextField(
-              controller: email,
-            ),
-            SizedBox(height: 30.0,),
-            Align(
-              alignment: Alignment.bottomLeft,
-              child: Text('Phone Number'),
-            ),
-            SizedBox(height: 5.0,),
-            TextField(
-              controller: phone,
-            ),
-            SizedBox(height: 30.0,),
-            Align(
-              alignment: Alignment.bottomLeft,
-              child: Text('Date of birth'),
-            ),
-            SizedBox(height: 5.0,),
-            TextField(
-              controller: date,
-            ),
-            SizedBox(height: 20.0,),
-            MaterialButton(
-              height: 55.0, 
-              minWidth: 400, 
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15.0),
+              SizedBox(height: 20.0,),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Text('Status'),
               ),
-              color: Colors.redAccent, 
-              textColor: Colors.white, 
-              child: Text("Log out",),
-              onPressed: () => {}, 
-              splashColor: Colors.redAccent,
-            ),
-          ],
+              SizedBox(height: 5.0,),
+              TextField(
+                controller: status,
+              ),
+              SizedBox(height: 30.0,),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Text('Email'),
+              ),
+              SizedBox(height: 5.0,),
+              TextField(
+                controller: email,
+              ),
+              SizedBox(height: 30.0,),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Text('Phone Number'),
+              ),
+              SizedBox(height: 5.0,),
+              TextField(
+                controller: phone,
+              ),
+              SizedBox(height: 30.0,),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Text('Date of birth'),
+              ),
+              SizedBox(height: 5.0,),
+              TextField(
+                controller: date,
+              ),
+              SizedBox(height: 20.0,),
+              MaterialButton(
+                height: 55.0, 
+                minWidth: 400, 
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                color: Colors.redAccent, 
+                textColor: Colors.white, 
+                child: Text("Log out",),
+                onPressed: () => {}, 
+                splashColor: Colors.redAccent,
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: NavigationWidget(),
