@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/navigation_widget.dart';
-
 class ProfilePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -151,8 +149,6 @@ class _ProfilePageState extends State<ProfilePage> {
           ],
         ),
       ),
-      bottomNavigationBar: NavigationWidget(),
-      backgroundColor: Colors.white,
     );
   }
 

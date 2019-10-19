@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/navigation_widget.dart';
-
 class ChatPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -184,8 +182,6 @@ class _ChatPageState extends State<ChatPage> {
           ],
         ),
       ),
-      bottomNavigationBar: NavigationWidget(),
-      backgroundColor: Colors.white,
     );
   }
 

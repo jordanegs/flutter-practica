@@ -12,7 +12,6 @@ class _HomPageState extends State<HomPage> {
       body: Container(
         padding: EdgeInsets.all(20.0),
         color: Colors.white,
-        // minWidth: double.infinity, 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -25,7 +24,7 @@ class _HomPageState extends State<HomPage> {
                   color: Colors.white, 
                   textColor: Colors.black, 
                   child: Text('SOULmet', style: TextStyle(fontSize: 50),),
-                  onPressed: () => Navigator.pushReplacementNamed(context, 'landing'),
+                  onPressed: () => Navigator.pushReplacementNamed(context, 'pages'),
                   splashColor: Colors.white,
                 ),
               ],

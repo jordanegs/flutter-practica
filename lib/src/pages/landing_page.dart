@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
-import '../widgets/navigation_widget.dart';
-
 class LandingPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -17,12 +15,12 @@ class _LandingPageState extends State<LandingPage> {
       body: Stack(
         children: <Widget>[
           Container(
-            width: double.infinity,
+            width: MediaQuery.of(context).size.width,
             height: 300,
             color: Colors.deepPurple,
           ),
           Container(
-            width: double.infinity,
+            width: MediaQuery.of(context).size.width,
             child: Swiper(
               itemBuilder: (BuildContext context,int index){
                 return SingleChildScrollView(
@@ -31,7 +29,7 @@ class _LandingPageState extends State<LandingPage> {
                       SizedBox(height: 80.0,),
                       Image.asset('images/image.png'),
                       Card(
-                        elevation: 10.0,
+                        elevation: 5.0,
                         child: InkWell(
                           splashColor: Colors.blue.withAlpha(30),
                           child: Container(
@@ -46,48 +44,50 @@ class _LandingPageState extends State<LandingPage> {
                                 SizedBox(height: 15.0,),
                                 Text('10 mins away', textAlign: TextAlign.start,),
                                 SizedBox(height: 35.0,),
-                                Row(
-                                  children: <Widget>[
-                                    MaterialButton(
-                                      height: 40.0, 
-                                      minWidth: 154,
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(15.0),
-                                      ), 
-                                      color: Colors.red,
-                                      textColor: Colors.white, 
-                                      child: Row(
-                                        children: <Widget>[
-                                          Icon(Icons.favorite_border),
-                                          Text("Connect",),
-                                        ],
-                                      ), 
-                                      onPressed: () => {}, 
-                                      splashColor: Colors.white,
-                                    ),
-                                    MaterialButton(
-                                      height: 40.0, 
-                                      minWidth: 154,
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(15.0),
-                                      ),  
-                                      color: Colors.greenAccent, 
-                                      textColor: Colors.white, 
-                                      child: Row(
-                                        children: <Widget>[
-                                          Icon(Icons.near_me),
-                                          Text("Message",),
-                                        ],
-                                      ), 
-                                      onPressed: () => {}, 
-                                      splashColor: Colors.white,
-                                    ),
-                                  ],
-                                ),
                               ],
                             ),
                           ),
                         ),
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: MaterialButton(
+                              height: 50.0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(15.0)),
+                              ), 
+                              color: Colors.red,
+                              textColor: Colors.white, 
+                              child: Row(
+                                children: <Widget>[
+                                  Icon(Icons.favorite_border),
+                                  Text("Connect",),
+                                ],
+                              ), 
+                              onPressed: () => {}, 
+                              splashColor: Colors.white,
+                            ),
+                          ),
+                          Expanded(
+                            child: MaterialButton(
+                              height: 50.0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(bottomRight: Radius.circular(15.0)),
+                              ), 
+                              color: Colors.greenAccent, 
+                              textColor: Colors.white, 
+                              child: Row(
+                                children: <Widget>[
+                                  Icon(Icons.near_me),
+                                  Text("Message",),
+                                ],
+                              ), 
+                              onPressed: () => {}, 
+                              splashColor: Colors.white,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -100,7 +100,6 @@ class _LandingPageState extends State<LandingPage> {
           ),
         ],
       ),
-      bottomNavigationBar: NavigationWidget(),
     );
   }
 }

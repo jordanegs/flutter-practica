@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/navigation_widget.dart';
-
 class ConnectionPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -180,7 +178,6 @@ class _ConnectionPageState extends State<ConnectionPage> {
           ],
         ),
       ),
-      bottomNavigationBar: NavigationWidget(),
     );
   }
 
