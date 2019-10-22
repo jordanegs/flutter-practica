@@ -1,3 +1,4 @@
+import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 
 import './landing_page.dart';
@@ -30,30 +31,36 @@ class _NavigationPageState extends State<NavigationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _tabList.elementAt(_count),
-      bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
+      bottomNavigationBar: BottomNavyBar(
+        items: <BottomNavyBarItem>[
+          BottomNavyBarItem(
             icon: Icon(Icons.dashboard),
             title: Text('Home'),
+            activeColor: Colors.purple,
+            inactiveColor: Colors.black,
           ),
-          BottomNavigationBarItem(
+          BottomNavyBarItem(
             icon: Icon(Icons.favorite_border),
             title: Text('Connections'),
+            activeColor: Colors.purple,
+            inactiveColor: Colors.black,
           ),
-          BottomNavigationBarItem(
+          BottomNavyBarItem(
             icon: Icon(Icons.chat_bubble_outline),
             title: Text('Chats'),
+            activeColor: Colors.purple,
+            inactiveColor: Colors.black,
           ),
-          BottomNavigationBarItem(
+          BottomNavyBarItem(
             icon: Icon(Icons.perm_identity),
             title: Text('Profile'),
+            activeColor: Colors.purple,
+            inactiveColor: Colors.black,
           ),
         ],
-        currentIndex: _count,
-        selectedItemColor: Colors.purple,
-        showUnselectedLabels: true,
-        unselectedItemColor: Colors.black,
-        onTap: _onItemTapped,
+        selectedIndex: _count,
+        showElevation: true,
+        onItemSelected: _onItemTapped,
       ),
     );
   }

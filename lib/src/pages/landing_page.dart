@@ -60,6 +60,7 @@ class _LandingPageState extends State<LandingPage> {
                               color: Colors.red,
                               textColor: Colors.white, 
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Icon(Icons.favorite_border),
                                   Text("Connect",),
@@ -78,6 +79,7 @@ class _LandingPageState extends State<LandingPage> {
                               color: Colors.greenAccent, 
                               textColor: Colors.white, 
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Icon(Icons.near_me),
                                   Text("Message",),

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class HomPage extends StatefulWidget {
@@ -6,6 +8,14 @@ class HomPage extends StatefulWidget {
 }
 
 class _HomPageState extends State<HomPage> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      Duration(seconds: 3), () => Navigator.pushReplacementNamed(context, 'pages'),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,6 +49,10 @@ class _HomPageState extends State<HomPage> {
             SizedBox(height: 200.0,),
             Center(
               child: Text('10 mins away'),
+            ),
+            SizedBox(height: 20.0,),
+            CircularProgressIndicator(
+              backgroundColor: Colors.white,
             ),
           ],
         ),

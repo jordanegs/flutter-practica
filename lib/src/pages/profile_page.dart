@@ -32,7 +32,7 @@ class _ProfilePageState extends State<ProfilePage> {
             Container(
               padding: EdgeInsets.all(15.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+                // mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Center(
                     child: Column(
@@ -63,9 +63,10 @@ class _ProfilePageState extends State<ProfilePage> {
                                 Column(
                                   children: <Widget>[
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: <Widget>[
                                         Icon(Icons.favorite_border),
-                                        Text('30'),
+                                        Text('  30'),
                                       ],
                                     ),
                                     Text('Connections'),
@@ -77,7 +78,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     Row(
                                       children: <Widget>[
                                         Icon(Icons.chat_bubble_outline),
-                                        Text('10'),
+                                        Text('  10'),
                                       ],
                                     ),
                                     Text('Connections'),
